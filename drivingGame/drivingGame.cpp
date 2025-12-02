@@ -7,8 +7,8 @@
 #include "functions.h"
 
 //initializing window, car struct, sdl renderer and sdl texture
-const int WINDOW_WIDTH = 1200;
-const int WINDOW_HEIGHT = 800;
+const int WINDOW_WIDTH = 1920;
+const int WINDOW_HEIGHT = 1080;
 SDL_Window* window = nullptr;
 SDL_Renderer* renderer = nullptr;
 SDL_Texture* texture = nullptr;
