@@ -120,13 +120,13 @@ SDL_Texture* loadTexture(std::string path) {
 	SDL_Surface* loadedSurface = SDL_LoadBMP(path.c_str());
 
 	if (loadedSurface == nullptr) {
-		std::cerr << "Unable to load BMP " << path.c_str() << "! SDL Error: " << SDL_GetError() << std::endl;
+		std::cerr << "Unable to load BMP " << path.c_str() << "! SDL Error: " << SDL_GetError() << "\n";
 	}
 	else {
 		// Creating the texture from the loaded bitmab image surface
 		newTexture = SDL_CreateTextureFromSurface(renderer, loadedSurface);
 		if (newTexture == nullptr) {
-			std::cerr << "Unable to create texture from " << path.c_str() << "! SDL Error: " << SDL_GetError() << std::endl;
+			std::cerr << "Unable to create texture from " << path.c_str() << "! SDL Error: " << SDL_GetError() << "\n";
 		}
 
 		// freeing up the surface as the texture is all thats needed
